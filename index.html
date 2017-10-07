@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+  <!-- Initialize Firebase -->
+  <script src="init.js"></script>
+  <style>
+    .container {
+      padding-top: 20px;
+      width: 400px;
+    }
+
+    a {
+      text-decoration: none !important;
+      font-size: 16px !important;
+      cursor: pointer;
+    }
+
+    .done{
+      text-decoration: line-through;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="panel panel-primary">
+
+      <div class="panel-heading">
+        TodoList!
+      </div>
+      <div class="panel-body">
+
+          <div class="alert alert-danger" id="errormessage" >
+             invalide Input
+            </div>
+
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm-9">
+              <input  id="task" type="text" class="form-control">
+            </div>
+            <div class="col-sm-3" style="text-align:right;">
+              <button id="add-task" class="btn btn-primary">add</button>
+            </div>
+          </div>
+        </div>
+
+        <ul class="list-group" id="list-tasks">
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
