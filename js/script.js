@@ -20,11 +20,14 @@ var Task = function(name,stat){
 
 var buildList = function(list){
     
+    $("#list-tasks").empty();
+
+    if(list == null)
+        return false;
+
     var listValues = Object.values(list);
     var done = "";
     var buttonType = "";
-
-    $("#list-tasks").empty();
 
     for(var i = 0;i< listValues.length;i++)
     {
