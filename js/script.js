@@ -64,9 +64,8 @@ var buildList = function(list){
 
     $(".action-btn-check").on("click",function(){
         
-        var statRef = taskRef.child($(this).data().id).child("stat");
-        statRef.transaction(function(currentStat){
-            return 1;
+        var statRef = taskRef.child($(this).data().id).update({
+            stat:1
         });
     });
 };
